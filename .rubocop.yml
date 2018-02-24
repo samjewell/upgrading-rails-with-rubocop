@@ -1,0 +1,13 @@
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'script/**/*'
+    - 'lib/templates/**/*'
+  TargetRailsVersion: 4.2
+  TargetRubyVersion: 2.3
+
+Rails:
+  Enabled: true
