@@ -18,11 +18,11 @@ group :development, :test do
 end
 
 group :development do
-  gem "rubocop", "~> 0.47", require: false
+  gem "rubocop",     "~> 0.47", require: false
   gem 'web-console', '2.3.0'
 end
 
 group :production do
-  gem 'pg',             '1.0.0'
+  gem "pg",             "~> 0.20.0"
   gem 'rails_12factor', '0.0.3'
 end
