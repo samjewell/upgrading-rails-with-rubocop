@@ -14,11 +14,13 @@ gem 'sdoc',         '1.0.0', group: :doc
 group :development, :test do
   gem 'sqlite3',     '1.3.13'
   gem 'byebug',      '10.0.0'
-  gem 'web-console', '2.3.0'
   gem 'spring',      '2.0.2'
 end
 
-gem "rubocop", "~> 0.47", group: :development, require: false
+group :development do
+  gem "rubocop", "~> 0.47", require: false
+  gem 'web-console', '2.3.0'
+end
 
 group :production do
   gem 'pg',             '1.0.0'
