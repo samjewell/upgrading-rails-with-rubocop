@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.5'
 
-gem 'rails',        '4.2.10'
+gem 'rails',        '~> 5.0.0'
 gem 'sass-rails',   '5.0.7'
 gem 'bootstrap',    '~> 4.0.0'
 gem 'uglifier',     '4.1.6'
@@ -24,6 +24,10 @@ end
 group :development do
   gem "rubocop",     "~> 0.47", require: false
   gem 'web-console', '2.3.0'
+end
+
+group :test do
+  gem "rails-controller-testing"
 end
 
 group :production do
