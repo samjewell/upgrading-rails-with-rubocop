@@ -26,6 +26,10 @@ group :development do
   gem 'web-console', '2.3.0'
 end
 
+group :test do
+  gem "rails-controller-testing"
+end
+
 group :production do
   gem "pg",             "~> 0.20.0"
   gem 'rails_12factor', '0.0.3'
