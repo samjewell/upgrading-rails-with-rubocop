@@ -3,10 +3,19 @@ AllCops:
   DisplayStyleGuide: true
   Exclude:
     - 'bin/**/*'
+    - 'config/application.rb'
+    - 'config/boot.rb'
+    - 'config/cable.yml'
+    - 'config/environment.rb'
+    - 'config/environments/*'
+    - 'config/initializers/*'
+    - 'config/puma.rb'
+    - 'config/secrets.yml'
+    - 'config/spring.rb'
     - 'db/**/*'
     - 'script/**/*'
     - 'lib/templates/**/*'
-  TargetRailsVersion: 4.2
+  TargetRailsVersion: 5.0
   TargetRubyVersion: 2.3
 
 Rails:
