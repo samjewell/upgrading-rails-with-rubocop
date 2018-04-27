@@ -20,7 +20,9 @@ class MicropostsControllerTest < ActionController::TestCase
 
   test "should create micropost" do
     assert_difference('Micropost.count') do
-      post :create, params: { micropost: { content: @micropost.content, user_id: @micropost.user_id } }
+      post :create, params: {
+        micropost: { content: @micropost.content, user_id: @micropost.user_id }
+      }
     end
 
     assert_redirected_to micropost_path(assigns(:micropost))
@@ -37,7 +39,11 @@ class MicropostsControllerTest < ActionController::TestCase
   end
 
   test "should update micropost" do
-    patch :update, params: { id: @micropost, micropost: { content: @micropost.content, user_id: @micropost.user_id } }
+    patch :update, params: {
+      id: @micropost, micropost: {
+        content: @micropost.content, user_id: @micropost.user_id
+      }
+    }
     assert_redirected_to micropost_path(assigns(:micropost))
   end
 
