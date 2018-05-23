@@ -2,6 +2,7 @@
   "name": "toy-app",
   "description": "Manage users and microposts",
   "scripts": {
+    "postdeploy": "bundle exec rake db:schema:load"
   },
   "env": {
     "LANG": {
